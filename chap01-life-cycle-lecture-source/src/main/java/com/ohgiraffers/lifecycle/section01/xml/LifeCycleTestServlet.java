@@ -20,6 +20,7 @@ public class LifeCycleTestServlet extends HttpServlet {
 
     }
 
+
     /* 최초 서블릿 요청 시에 동작하는 메소드로 최초 요청 시에만 실행하고 두 번째 요청부터는 호출하지 않는다. */
     @Override
     public void init(ServletConfig config) throws ServletException {
