@@ -7,13 +7,14 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/show404error")
-public class Show404ErrorServlet extends HttpServlet {
+@WebServlet("/show500error")
+public class Show500ErrorServlet extends HttpServlet {
 
   @Override
   protected void doGet(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
-    response.sendError(404, "페이지를 찾을 수 없습니다.");
+
+    response.sendError(500, "500은 서버 내부 오류입니다.");
 
   }
 }
